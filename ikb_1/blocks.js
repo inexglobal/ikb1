@@ -1,3 +1,16 @@
+Blockly.Blocks['ikb1_select_i2c_address'] = {
+	init: function () {
+		this.appendDummyInput()
+			.appendField(Blockly.Msg.IKB_1.SELECT_I2C_ADDRESS)
+			.appendField(new Blockly.FieldDropdown([["0x48", "0x48"], ["0x49", "0x49"]]), "addr");
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setColour(180);
+		this.setTooltip("");
+		this.setHelpUrl("https://store.kidbright.info/plugin/7/iKB-1");
+	}
+};
+
 Blockly.Blocks['ikb1_digital_read'] = {
 	init: function() {
 		this.appendDummyInput()
